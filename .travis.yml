@@ -4,7 +4,6 @@ language: java
 sudo: required
 jdk: openjdk8
 cache:
-directory:
-"$HOME/.m2"
-script:
-"mvn clean install"
+  directory:
+  "$HOME/.m2"
+script: "mvn clean install"
