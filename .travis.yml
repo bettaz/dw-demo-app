@@ -1,9 +1,10 @@
+---
+os: linux
 dist: trusty
 group: edge
 language: java
-sudo: required
 jdk: openjdk8
-cache:
-  directory:
-  "$HOME/.m2"
 script: "mvn clean install"
+cache:
+    directories:
+     "$HOME/.m2"
